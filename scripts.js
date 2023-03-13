@@ -8,8 +8,8 @@ function getMoonPhases () {
 
   fetch('https://www.icalendar37.net/lunar/api/?year=' + year + '&month=' + (month + 1))
     .then(response => response.json())
-    .then(response => {
+    .then(data => {
         // This is where you populate the html elements and element attributes with values from the result
     })
-    .catch(err => console.error(err));
+    .catch(error => console.error(error));
 }
